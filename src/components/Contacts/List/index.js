@@ -1,6 +1,10 @@
-function List() {
+function List({contacts}) {
   return (<div>
-		contacts list
+		<ul>{
+			contacts.map((contact, index) => (
+				<li key={index}>{contact.fullName} {contact.phoneNumber}</li>
+			))
+		}</ul>
 	</div>);
 }
 

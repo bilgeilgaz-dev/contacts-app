@@ -11,7 +11,7 @@ function Contacts() {
 
   return (
     <div>
-      <List />
+      <List contacts={contacts}/>
       <From addContact={setContacts} contacts={contacts}/>
     </div>
   );
