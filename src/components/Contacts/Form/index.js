@@ -19,20 +19,22 @@ function Form({ addContact, contacts }) {
       return false;
     }
     addContact([...contacts, form]);
-    
-    console.log('form', form)
+  
   }
 
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div>
+        <div className='form-input'>
           <input name="fullName" placeholder="Full name" onChange={onChangeInput} value={form.fullName}/>
         </div>
-        <div>
+        <div className='form-input'>
           <input name="phoneNumber" placeholder="Phone number" onChange={onChangeInput} value={form.phoneNumber}/>
         </div>
-        <button>Add</button>
+        <div className='add-button'>
+          <button>Add</button>
+        </div>
+        
       </form>
     </div>
     

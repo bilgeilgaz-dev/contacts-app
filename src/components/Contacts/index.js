@@ -14,7 +14,8 @@ function Contacts() {
   }, [contacts]);
 
   return (
-    <div>
+    <div id="contacts-container">
+      <h1>Contacts</h1>
       <List contacts={contacts}/>
       <From addContact={setContacts} contacts={contacts}/>
     </div>
